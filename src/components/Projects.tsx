@@ -7,6 +7,7 @@ const projects = [
     description: 'A foundational data science project that deconstructs social network mechanics from the ground up. Built a complete recommendation engine using pure Python—no pandas, no NumPy—implementing friend suggestions via mutual connection analysis and content discovery through collaborative filtering. This project embodies the essence of understanding data structures and algorithms before relying on abstraction layers.',
     tags: ['Pure Python', 'Graph Theory', 'Recommendation Systems', 'JSON Processing', 'Social Network Analysis'],
     image: '/projects/coders-of-the-city.svg',
+    demoUrl: 'https://github.com/YUVRAJ-NOVA/Coders-of-the-city',
     githubUrl: 'https://github.com/YUVRAJ-NOVA/Coders-of-the-city',
   },
   {
