@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: 'CodeBook: Social Network Analytics',
-    description: 'A foundational data science project that deconstructs social network mechanics from the ground up. Built a complete recommendation engine using pure Python—no pandas, no NumPy—implementing friend suggestions via mutual connection analysis and content discovery through collaborative filtering. This project embodies the essence of understanding data structures and algorithms before relying on abstraction layers.',
+    description: 'Built a complete recommendation engine from scratch using pure Python—no pandas, no NumPy. Implemented friend suggestions via mutual connection analysis and content discovery through collaborative filtering, mastering data structures and graph algorithms.',
     tags: ['Pure Python', 'Graph Theory', 'Recommendation Systems', 'JSON Processing', 'Social Network Analysis'],
     image: '/projects/coders-of-the-city.svg',
     demoUrl: 'https://github.com/YUVRAJ-NOVA/Coders-of-the-city',
