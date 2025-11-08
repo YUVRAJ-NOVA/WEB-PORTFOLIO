@@ -7,7 +7,6 @@ const projects = [
     description: 'Built a complete recommendation engine from scratch using pure Python—no pandas, no NumPy. Implemented friend suggestions via mutual connection analysis and content discovery through collaborative filtering, mastering data structures and graph algorithms.',
     tags: ['Pure Python', 'Graph Theory', 'Recommendation Systems', 'JSON Processing', 'Social Network Analysis'],
     image: '/projects/coders-of-the-city.svg',
-    demoUrl: 'https://github.com/YUVRAJ-NOVA/Coders-of-the-city',
     githubUrl: 'https://github.com/YUVRAJ-NOVA/Coders-of-the-city',
   },
   {
