@@ -327,8 +327,8 @@ export const Hero = () => {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <motion.a
-                href="/Yuvraj_Singh_Kushwah_CV.pdf"
-                download="Yuvraj_Singh_Kushwah_CV.pdf"
+                href="/yuvraj_resume.pdf"
+                download="Yuvraj_Singh_Kushwah_Resume.pdf"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
@@ -337,7 +337,7 @@ export const Hero = () => {
                 className="flex-1 sm:flex-initial px-8 py-4 rounded-xl glass-strong border-2 border-primary hover:bg-primary/10 transition-all flex items-center justify-center gap-3 font-semibold text-lg glow-primary group"
               >
                 <Download className="w-5 h-5 group-hover:animate-bounce" />
-                <span>Download CV</span>
+                <span>Download Resume</span>
               </motion.a>
               
               <motion.button
