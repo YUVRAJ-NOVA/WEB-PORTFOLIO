@@ -3,6 +3,14 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'QUIZ\'A - Adaptive Learning Platform',
+    description: 'AI-powered adaptive quiz platform leveraging Item Response Theory and Bayesian Knowledge Tracking for personalized learning. Implements Thompson Sampling for optimal question selection, real-time difficulty adjustment, and concept mastery visualization. Features offline-first architecture with PWA capabilities and global CDN delivery.',
+    tags: ['AI/ML', 'Item Response Theory', 'Bayesian Statistics', 'Thompson Sampling', 'PWA', 'React'],
+    image: '/projects/quiz-a.svg',
+    demoUrl: 'https://yuvraj-nova.github.io/QUIZ-A/',
+    githubUrl: 'https://github.com/YUVRAJ-NOVA/QUIZ-A',
+  },
+  {
     title: 'Multimodal E-Commerce Price Predictor',
     description: 'Production-grade ML system combining CNN image recognition and NLP to predict prices across 75K+ products. Achieved 67.29% SMAPE with <1ms inference via GPU-optimized ensemble modeling. Engineered pack quantity feature explaining 35% of price variance.',
     tags: ['Deep Learning', 'Computer Vision', 'NLP', 'Ensemble Models', 'GPU Optimization', 'Production ML'],
