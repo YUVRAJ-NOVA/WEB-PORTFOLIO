@@ -2,8 +2,6 @@ import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
 
 // Set up PDF.js worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
@@ -85,9 +83,6 @@ export const CertificateViewer = ({ isOpen, onClose, certificateUrl, title }: Ce
       };
     }
   }, [isOpen]);
-  }, [isOpen, certificateUrl, onClose]);
-
-  if (!isOpen) return null;
 
   if (!isOpen) return null;
 
