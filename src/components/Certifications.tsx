@@ -8,10 +8,10 @@ const certifications = [
     title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
     issuer: 'Oracle',
     date: '2025',
-    description: 'As an Oracle Cloud Infrastructure 2025 Certified Generative AI Professional, I possess specialized expertise in architecting and deploying advanced GenAI solutions. This certification validates my mastery of the complete GenAI lifecycle—from fine-tuning complex models to building scalable, enterprise-grade AI applications—using Oracle\'s powerful cloud infrastructure.',
+    description: 'Specialized expertise in architecting and deploying advanced GenAI solutions. Mastery of the complete GenAI lifecycle—from fine-tuning complex models to building scalable, enterprise-grade AI applications using Oracle\'s powerful cloud infrastructure.',
     color: 'from-red-500 to-orange-500',
     badge: '/certificates/oracle-genai-badge.jpg',
-    certificateUrl: '/certificates/oracle-genai-professional.pdf',
+    certificateUrl: '/certificates/oracle-genai-cert.png',
   },
   {
     title: 'TensorFlow Developer Certificate',
