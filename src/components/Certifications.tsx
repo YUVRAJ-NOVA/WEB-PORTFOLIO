@@ -3,6 +3,15 @@ import { Award, ExternalLink } from 'lucide-react';
 
 const certifications = [
   {
+    title: 'Oracle Cloud Infrastructure 2025 Certified Generative AI Professional',
+    issuer: 'Oracle',
+    date: '2025',
+    description: 'As an Oracle Cloud Infrastructure 2025 Certified Generative AI Professional, I possess specialized expertise in architecting and deploying advanced GenAI solutions. This certification validates my mastery of the complete GenAI lifecycle—from fine-tuning complex models to building scalable, enterprise-grade AI applications—using Oracle\'s powerful cloud infrastructure.',
+    color: 'from-red-500 to-orange-500',
+    badge: '/certificates/oracle-genai-badge.jpg',
+    certificateUrl: '/certificates/oracle-genai-professional.pdf',
+  },
+  {
     title: 'TensorFlow Developer Certificate',
     issuer: 'Google',
     date: '2024',
@@ -81,13 +90,27 @@ export const Certifications = () => {
                 <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
                 
                 <div className="relative z-10">
-                  <motion.div
-                    className="w-16 h-16 rounded-full glass flex items-center justify-center mb-4 glow-primary"
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    <Award className="w-8 h-8 text-primary" />
-                  </motion.div>
+                  {cert.badge ? (
+                    <motion.div
+                      className="w-24 h-24 mb-4 relative"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <img
+                        src={cert.badge}
+                        alt={`${cert.title} badge`}
+                        className="w-full h-full object-contain drop-shadow-lg"
+                      />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      className="w-16 h-16 rounded-full glass flex items-center justify-center mb-4 glow-primary"
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      <Award className="w-8 h-8 text-primary" />
+                    </motion.div>
+                  )}
 
                   <h3 className="text-xl font-bold mb-2 group-hover:gradient-text transition-all">
                     {cert.title}
@@ -102,14 +125,19 @@ export const Certifications = () => {
                     {cert.description}
                   </p>
 
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 text-sm text-primary hover:text-secondary transition-colors"
-                  >
-                    <span>View Certificate</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </motion.button>
+                  {cert.certificateUrl && (
+                    <motion.a
+                      href={cert.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex items-center gap-2 text-sm text-primary hover:text-secondary transition-colors"
+                    >
+                      <span>View Certificate</span>
+                      <ExternalLink className="w-4 h-4" />
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>
