@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Award, ExternalLink } from 'lucide-react';
+import { useState } from 'react';
+import { CertificateViewer } from './CertificateViewer';
 
 const certifications = [
   {
@@ -56,6 +58,11 @@ const certifications = [
 ];
 
 export const Certifications = () => {
+  const [selectedCertificate, setSelectedCertificate] = useState<{
+    url: string;
+    title: string;
+  } | null>(null);
+
   return (
     <section id="certifications" className="py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
@@ -96,10 +103,14 @@ export const Certifications = () => {
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       transition={{ duration: 0.3 }}
                     >
+                      {/* Blurred background for badge */}
+                      <div className="absolute inset-0 -z-10">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl" />
+                      </div>
                       <img
                         src={cert.badge}
                         alt={`${cert.title} badge`}
-                        className="w-full h-full object-contain drop-shadow-lg"
+                        className="w-full h-full object-contain drop-shadow-2xl relative z-10"
                       />
                     </motion.div>
                   ) : (
@@ -126,17 +137,15 @@ export const Certifications = () => {
                   </p>
 
                   {cert.certificateUrl && (
-                    <motion.a
-                      href={cert.certificateUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <motion.button
+                      onClick={() => setSelectedCertificate({ url: cert.certificateUrl!, title: cert.title })}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center gap-2 text-sm text-primary hover:text-secondary transition-colors"
                     >
                       <span>View Certificate</span>
                       <ExternalLink className="w-4 h-4" />
-                    </motion.a>
+                    </motion.button>
                   )}
                 </div>
               </div>
@@ -144,6 +153,14 @@ export const Certifications = () => {
           ))}
         </div>
       </div>
+
+      {/* Certificate Viewer Modal */}
+      <CertificateViewer
+        isOpen={selectedCertificate !== null}
+        onClose={() => setSelectedCertificate(null)}
+        certificateUrl={selectedCertificate?.url || ''}
+        title={selectedCertificate?.title || ''}
+      />
     </section>
   );
 };
