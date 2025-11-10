@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: 'Multimodal E-Commerce Price Predictor',
-    description: 'Production-grade ML system combining CNN-based image recognition and NLP text analytics to predict product prices across 75K+ items. Achieved 67.29% SMAPE with <1ms inference through GPU-optimized ensemble modeling. Engineered breakthrough feature: pack quantity extraction explaining 35% of price variance, transforming cryptic product descriptions into actionable pricing intelligence for enterprise e-commerce platforms.',
+    description: 'Production-grade ML system combining CNN image recognition and NLP to predict prices across 75K+ products. Achieved 67.29% SMAPE with <1ms inference via GPU-optimized ensemble modeling. Engineered pack quantity feature explaining 35% of price variance.',
     tags: ['Deep Learning', 'Computer Vision', 'NLP', 'Ensemble Models', 'GPU Optimization', 'Production ML'],
     image: '/projects/multimodal-price-predictor.svg',
     githubUrl: 'https://github.com/YUVRAJ-NOVA/multimodal-ecommerce-price-predictor',
