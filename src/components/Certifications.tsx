@@ -14,6 +14,15 @@ const certifications = [
     certificateUrl: '/certificates/oracle-genai-cert.png',
   },
   {
+    title: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
+    issuer: 'Oracle',
+    date: '2025',
+    description: 'Demonstrated comprehensive understanding of AI fundamentals, machine learning concepts, and Oracle Cloud AI services. Validated expertise in foundational AI principles, data preparation, model training, and deploying AI solutions on Oracle Cloud Infrastructure.',
+    color: 'from-orange-500 to-yellow-500',
+    badge: '/certificates/oracle-ai-foundations-badge.jpg',
+    certificateUrl: '/certificates/oracle-ai-foundations-cert.png',
+  },
+  {
     title: 'TensorFlow Developer Certificate',
     issuer: 'Google',
     date: '2024',
