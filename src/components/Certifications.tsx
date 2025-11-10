@@ -10,7 +10,7 @@ const certifications = [
     date: '2025',
     description: 'Specialized expertise in architecting and deploying advanced GenAI solutions. Mastery of the complete GenAI lifecycle—from fine-tuning complex models to building scalable, enterprise-grade AI applications using Oracle\'s powerful cloud infrastructure.',
     color: 'from-red-500 to-orange-500',
-    badge: '/certificates/oracle-genai-badge.jpg',
+    badge: '/certificates/oracle-genai-badge.png',
     certificateUrl: '/certificates/oracle-genai-cert.png',
   },
   {
@@ -19,8 +19,16 @@ const certifications = [
     date: '2025',
     description: 'Demonstrated comprehensive understanding of AI fundamentals, machine learning concepts, and Oracle Cloud AI services. Validated expertise in foundational AI principles, data preparation, model training, and deploying AI solutions on Oracle Cloud Infrastructure.',
     color: 'from-orange-500 to-yellow-500',
-    badge: '/certificates/oracle-ai-foundations-badge.jpg',
+    badge: '/certificates/oracle-ai-foundations-badge.png',
     certificateUrl: '/certificates/oracle-ai-foundations-cert.png',
+  },
+  {
+    title: 'JPMorgan Chase & Co. Quantitative Research Virtual Experience Program on Forage',
+    issuer: 'JPMorgan Chase & Co.',
+    date: 'November 2025',
+    description: 'Excelled in a high-intensity simulation of the JPMC Quantitative Research environment, deploying sophisticated quantitative methodologies to solve complex financial challenges. This program honed my abilities in dissecting institutional-grade financial data, formulating algorithmic strategies, and applying rigorous computational techniques to real-world market scenarios.',
+    color: 'from-blue-600 to-cyan-500',
+    certificateUrl: '/certificates/jpmorgan-quant-research-cert.png',
   },
   {
     title: 'TensorFlow Developer Certificate',
