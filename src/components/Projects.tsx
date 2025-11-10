@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Multimodal E-Commerce Price Predictor',
+    description: 'Production-grade ML system combining CNN-based image recognition and NLP text analytics to predict product prices across 75K+ items. Achieved 67.29% SMAPE with <1ms inference through GPU-optimized ensemble modeling. Engineered breakthrough feature: pack quantity extraction explaining 35% of price variance, transforming cryptic product descriptions into actionable pricing intelligence for enterprise e-commerce platforms.',
+    tags: ['Deep Learning', 'Computer Vision', 'NLP', 'Ensemble Models', 'GPU Optimization', 'Production ML'],
+    image: '/projects/multimodal-price-predictor.svg',
+    githubUrl: 'https://github.com/YUVRAJ-NOVA/multimodal-ecommerce-price-predictor',
+  },
+  {
     title: 'CodeBook: Social Network Analytics',
     description: 'Built a complete recommendation engine from scratch using pure Python—no pandas, no NumPy. Implemented friend suggestions via mutual connection analysis and content discovery through collaborative filtering, mastering data structures and graph algorithms.',
     tags: ['Pure Python', 'Graph Theory', 'Recommendation Systems', 'JSON Processing', 'Social Network Analysis'],
