@@ -103,14 +103,18 @@ export const Certifications = () => {
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       transition={{ duration: 0.3 }}
                     >
-                      {/* Blurred background for badge */}
+                      {/* Blurred background glow for badge */}
                       <div className="absolute inset-0 -z-10">
-                        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-2xl opacity-70" />
                       </div>
                       <img
                         src={cert.badge}
                         alt={`${cert.title} badge`}
                         className="w-full h-full object-contain drop-shadow-2xl relative z-10"
+                        style={{
+                          mixBlendMode: 'lighten',
+                          filter: 'brightness(1.1) contrast(1.1)',
+                        }}
                       />
                     </motion.div>
                   ) : (
