@@ -31,6 +31,14 @@ const certifications = [
     certificateUrl: '/certificates/jpmorgan-quant-research-cert.png',
   },
   {
+    title: 'Deloitte Australia Data Analytics Job Simulation on Forage',
+    issuer: 'Deloitte Australia',
+    date: 'November 2025',
+    description: 'Successfully completed a rigorous simulation of Deloitte\'s enterprise-level data analytics workflow. This program involved a forensic analysis of complex client datasets, executing advanced data cleansing and transformation techniques. Specialized in deriving actionable, data-driven insights and translated these findings into strategic data visualizations designed for executive-level presentation and client-facing decisions.',
+    color: 'from-green-600 to-emerald-500',
+    certificateUrl: '/certificates/deloitte-data-analytics-cert.png',
+  },
+  {
     title: 'TensorFlow Developer Certificate',
     issuer: 'Google',
     date: '2024',
