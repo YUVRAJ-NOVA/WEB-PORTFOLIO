@@ -38,48 +38,6 @@ const certifications = [
     color: 'from-green-600 to-emerald-500',
     certificateUrl: '/certificates/deloitte-data-analytics-cert.png',
   },
-  {
-    title: 'TensorFlow Developer Certificate',
-    issuer: 'Google',
-    date: '2024',
-    description: 'Professional certification in building and training neural networks using TensorFlow',
-    color: 'from-orange-500 to-red-500',
-  },
-  {
-    title: 'AWS Certified Machine Learning',
-    issuer: 'Amazon Web Services',
-    date: '2024',
-    description: 'Specialty certification in designing, implementing, and maintaining ML solutions',
-    color: 'from-yellow-500 to-orange-500',
-  },
-  {
-    title: 'Deep Learning Specialization',
-    issuer: 'DeepLearning.AI',
-    date: '2023',
-    description: 'Comprehensive program covering neural networks, CNNs, RNNs, and transformers',
-    color: 'from-blue-500 to-cyan-500',
-  },
-  {
-    title: 'Data Science Professional',
-    issuer: 'IBM',
-    date: '2023',
-    description: 'Professional certificate in data analysis, visualization, and machine learning',
-    color: 'from-purple-500 to-pink-500',
-  },
-  {
-    title: 'Advanced Statistics & Probability',
-    issuer: 'Stanford Online',
-    date: '2023',
-    description: 'Graduate-level course in statistical inference and probability theory',
-    color: 'from-green-500 to-teal-500',
-  },
-  {
-    title: 'MLOps Specialization',
-    issuer: 'Coursera',
-    date: '2023',
-    description: 'End-to-end ML pipeline development and deployment in production',
-    color: 'from-indigo-500 to-purple-500',
-  },
 ];
 
 export const Certifications = () => {
@@ -107,7 +65,7 @@ export const Certifications = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.title}
