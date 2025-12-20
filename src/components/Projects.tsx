@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'CONTRA-AI: Multi-Agent Autonomous System',
+    description: 'Advanced autonomous AI system featuring multi-agent collaboration and intelligent task orchestration. Built with cutting-edge LLM integration for autonomous decision-making, complex problem-solving, and adaptive behavior. Implements sophisticated agent communication protocols and hierarchical task management for enterprise-level automation.',
+    tags: ['AI Agents', 'LLM Integration', 'Multi-Agent Systems', 'Autonomous AI', 'Task Orchestration', 'Python'],
+    image: '/projects/contra ai.jpg',
+    githubUrl: 'https://github.com/YUVRAJ-NOVA/CONTRA-AI',
+  },
+  {
     title: 'CPU Insight Engine: Smart Performance & Price Prediction',
     description: 'Advanced ML platform analyzing 3,800+ processors with 95% prediction accuracy. Engineered predictive models for CPU performance benchmarking and intelligent price forecasting using regression algorithms and feature engineering. Real-time analytics dashboard with interactive visualizations for performance comparisons and market insights.',
     tags: ['Machine Learning', 'Regression Models', 'Feature Engineering', 'Data Analytics', 'Performance Optimization', 'React'],
