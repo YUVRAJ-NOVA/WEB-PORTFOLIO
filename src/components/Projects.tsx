@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'CPU Insight Engine: Smart Performance & Price Prediction',
+    description: 'Advanced ML platform analyzing 3,800+ processors with 95% prediction accuracy. Engineered predictive models for CPU performance benchmarking and intelligent price forecasting using regression algorithms and feature engineering. Real-time analytics dashboard with interactive visualizations for performance comparisons and market insights.',
+    tags: ['Machine Learning', 'Regression Models', 'Feature Engineering', 'Data Analytics', 'Performance Optimization', 'React'],
+    image: '/projects/cpu-insight-engine.svg',
+    githubUrl: 'https://github.com/YUVRAJ-NOVA/cpu-benchmark-smart-price-prediction',
+  },
+  {
     title: 'QUIZ\'A - Adaptive Learning Platform',
     description: 'AI-powered adaptive quiz platform leveraging Item Response Theory and Bayesian Knowledge Tracking for personalized learning. Implements Thompson Sampling for optimal question selection, real-time difficulty adjustment, and concept mastery visualization. Features offline-first architecture with PWA capabilities and global CDN delivery.',
     tags: ['AI/ML', 'Item Response Theory', 'Bayesian Statistics', 'Thompson Sampling', 'PWA', 'React'],
