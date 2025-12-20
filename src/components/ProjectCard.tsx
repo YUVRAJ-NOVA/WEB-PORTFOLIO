@@ -25,7 +25,7 @@ export const ProjectCard = ({ title, description, tags, image, demoUrl, githubUr
       onHoverEnd={() => setIsFlipped(false)}
       className="relative"
       style={{ 
-        height: '420px',
+        height: '500px',
         perspective: '1500px'
       }}
     >
@@ -80,7 +80,7 @@ export const ProjectCard = ({ title, description, tags, image, demoUrl, githubUr
 
         {/* Back Side */}
         <div
-          className="absolute inset-0 glass-strong rounded-2xl p-6 flex flex-col justify-between border border-secondary/30 glow-secondary"
+          className="absolute inset-0 glass-strong rounded-2xl p-6 flex flex-col border border-secondary/30 glow-secondary"
           style={{ 
             backfaceVisibility: 'hidden',
             WebkitBackfaceVisibility: 'hidden',
@@ -92,10 +92,10 @@ export const ProjectCard = ({ title, description, tags, image, demoUrl, githubUr
             height: '100%'
           }}
         >
-          <div>
+          <div className="flex-1 overflow-y-auto mb-4">
             <h3 className="text-2xl font-bold mb-4 gradient-text">{title}</h3>
-            <p className="text-muted-foreground mb-4">{description}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
+            <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{description}</p>
+            <div className="flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <span
                   key={tag}
@@ -106,7 +106,7 @@ export const ProjectCard = ({ title, description, tags, image, demoUrl, githubUr
               ))}
             </div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-4 flex-shrink-0 pt-4 border-t border-border/50">
             {githubUrl && (
               <motion.a
                 href={githubUrl}
