@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'ORBITUNE - 3D Audio Experience with AI Companion',
+    description: 'Revolutionary 3D spatial audio platform transforming YouTube music into immersive spatial audio experiences. Powered by Gemini Flash 2.0 AI for intelligent music recommendations, featuring professional stem separation using Demucs, real-time audio visualization, and conversational interface. One-command startup with automated dependency management for seamless deployment.',
+    tags: ['3D Audio Processing', 'AI Chatbot', 'Spatial Audio', 'Demucs', 'FastAPI', 'React', 'Gemini AI'],
+    image: '/projects/orbitune.png',
+    githubUrl: 'https://github.com/YUVRAJ-NOVA/ORBITUNE',
+  },
+  {
     title: 'CONTRA-AI: Multi-Agent Autonomous System',
     description: 'Advanced autonomous AI system featuring multi-agent collaboration and intelligent task orchestration. Built with cutting-edge LLM integration for autonomous decision-making, complex problem-solving, and adaptive behavior. Implements sophisticated agent communication protocols and hierarchical task management for enterprise-level automation.',
     tags: ['AI Agents', 'LLM Integration', 'Multi-Agent Systems', 'Autonomous AI', 'Task Orchestration', 'Python'],
